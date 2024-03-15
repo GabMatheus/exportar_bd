@@ -1,0 +1,16 @@
+Nesse código, estamos realizando algumas operações básicas de manipulação de dados utilizando Python e algumas bibliotecas populares:
+
+1 - Importando as bibliotecas necessárias, como pandas, psycopg2 para conexão com banco de dados PostgreSQL, matplotlib.pyplot para gráficos e os para operações relacionadas ao sistema operacional.
+
+2 - Conectando ao banco de dados PostgreSQL usando psycopg2. Os parâmetros host, database, user e password são fornecidos para estabelecer a conexão.
+
+3 - Definindo uma consulta SQL na variável sql. Esta consulta seleciona todos os dados de uma tabela especificada, filtrando os resultados onde o campo filtro contém a palavra "TESTE".
+
+4 - Usando o pd.read_sql() do Pandas para executar a consulta SQL no banco de dados e armazenar o resultado em um DataFrame chamado df.
+
+5 - Definindo um caminho e nome de arquivo para salvar o DataFrame em um formato Excel. O caminho completo é criado usando os.path.join() para garantir a portabilidade do código entre diferentes 
+sistemas operacionais.
+
+6 - Salvamos o DataFrame como um arquivo Excel no caminho especificado usando o método to_excel() do Pandas.
+
+7 - Finalmente, fechamos a conexão com o banco de dados usando conn.close() para liberar os recursos após a conclusão das operações.
